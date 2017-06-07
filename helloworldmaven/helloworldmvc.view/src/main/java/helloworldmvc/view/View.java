@@ -9,7 +9,7 @@ public class View implements IView {
 	}
 
 	public void displayMessage(final String message) {
-		System.out.println();
+		System.out.println(message);
 	}
 
 }

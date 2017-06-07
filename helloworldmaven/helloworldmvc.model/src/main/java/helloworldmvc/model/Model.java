@@ -1,15 +1,14 @@
 package helloworldmvc.model;
 
+import java.io.IOException;
+
 import helloworldmvc.Contract.IModel;
 
 public class Model implements IModel {
 
-	public Model() {
+	public String getHelloWorld() throws IOException {
 
-	}
-
-	public String getHelloWorld() {
-		return null;
+		return DAOHelloWorld.getInstance().getHelloWorldMessage();
 	}
 
 }
